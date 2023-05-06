@@ -1,0 +1,26 @@
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+ul {
+  display: flex;
+  width: 30%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+li {
+  color: #0ccac4;
+  font-size: 25px;
+  font-family: "Bigelow Rules", cursive;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+li:hover {
+  color: #68e7e3;
+  transform: scale(1.15);
+}
