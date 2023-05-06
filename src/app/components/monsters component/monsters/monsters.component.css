@@ -1,0 +1,8 @@
+.monsters-list {
+  width: 85vw;
+  margin: 50px auto;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(256.5px, 256.5px));
+  grid-gap: 20px;
+}
