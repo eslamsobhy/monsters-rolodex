@@ -1,7 +1,11 @@
 <section class="monsters-list" *ngIf="monstersData" :Loading>
-  <app-monster *ngFor="let m of monstersData" [mData]="m"></app-monster>
+  <app-monster
+    *ngFor="let m of monstersData"
+    [mData]="m"
+    routerLink="/monsters/{{ m.id }}"
+  ></app-monster>
 </section>
 
-<section class="loading" #Loading>
+<ng-template class="loading" #Loading>
   <h1>Loading...</h1>
-</section>
+</ng-template>

@@ -28,3 +28,11 @@ p {
   font-size: 18px;
   color: #0ccac4;
 }
+
+.loading {
+  margin: 200px auto;
+}
+
+h1 {
+  text-align: center;
+}
