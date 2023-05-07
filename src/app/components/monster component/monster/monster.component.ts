@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Monster } from 'src/app/models/monster';
 
 @Component({
   selector: 'app-monster',
@@ -6,5 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./monster.component.css'],
 })
 export class MonsterComponent {
-  @Input() mData: any;
+  @Input() mData?: Monster;
 }

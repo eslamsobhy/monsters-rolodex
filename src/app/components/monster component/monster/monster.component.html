@@ -1,5 +1,8 @@
 <article class="monster">
-  <img src="https://robohash.org/{{ mData.id }}?set=set2&size=180x180" alt="" />
-  <h2>{{ mData.name }}</h2>
-  <p>{{ mData.email }}</p>
+  <img
+    src="https://robohash.org/{{ mData?.id }}?set=set2&size=180x180"
+    alt=""
+  />
+  <h2>{{ mData?.name }}</h2>
+  <p>{{ mData?.email }}</p>
 </article>
