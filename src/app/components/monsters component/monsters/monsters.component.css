@@ -6,3 +6,11 @@
   grid-template-columns: repeat(auto-fill, minmax(256.5px, 256.5px));
   grid-gap: 20px;
 }
+
+.loading {
+  margin: 200px auto;
+}
+
+h1 {
+  text-align: center;
+}

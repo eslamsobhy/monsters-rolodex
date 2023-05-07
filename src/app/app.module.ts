@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './components/app component/app.component';
 import { MonsterDetailsComponent } from './components/details component/monster-details/monster-details.component';
@@ -29,7 +30,7 @@ const routes: Routes = [
     MonstersComponent,
     HeaderComponent,
   ],
-  imports: [BrowserModule, RouterModule.forRoot(routes)],
+  imports: [BrowserModule, RouterModule.forRoot(routes), HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

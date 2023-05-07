@@ -1,10 +1,7 @@
-<section class="monsters-list">
-  <app-monster></app-monster>
-  <app-monster></app-monster>
-  <app-monster></app-monster>
-  <app-monster></app-monster>
-  <app-monster></app-monster>
-  <app-monster></app-monster>
-  <app-monster></app-monster>
-  <app-monster></app-monster>
+<section class="monsters-list" *ngIf="monstersData" :Loading>
+  <app-monster *ngFor="let m of monstersData" [mData]="m"></app-monster>
+</section>
+
+<section class="loading" #Loading>
+  <h1>Loading...</h1>
 </section>

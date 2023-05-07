@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-monster',
   templateUrl: './monster.component.html',
-  styleUrls: ['./monster.component.css']
+  styleUrls: ['./monster.component.css'],
 })
 export class MonsterComponent {
-
+  @Input() mData: any;
 }
