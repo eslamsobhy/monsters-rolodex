@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './components/app component/app.component';
 import { MonsterDetailsComponent } from './components/details component/monster-details/monster-details.component';
@@ -9,9 +10,26 @@ import { MonsterComponent } from './components/monster component/monster/monster
 import { MonstersComponent } from './components/monsters component/monsters/monsters.component';
 import { HeaderComponent } from './components/header component/header/header.component';
 
+const routes: Routes = [
+  // { path: '', component: HomeComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'monsters', component: MonstersComponent },
+  { path: 'monsters/:id', component: MonsterDetailsComponent },
+  { path: '**', component: ErrorComponent },
+];
+
 @NgModule({
-  declarations: [AppComponent, MonsterDetailsComponent, ErrorComponent, HomeComponent, MonsterComponent, MonstersComponent, HeaderComponent],
-  imports: [BrowserModule],
+  declarations: [
+    AppComponent,
+    MonsterDetailsComponent,
+    ErrorComponent,
+    HomeComponent,
+    MonsterComponent,
+    MonstersComponent,
+    HeaderComponent,
+  ],
+  imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],
   bootstrap: [AppComponent],
 })
