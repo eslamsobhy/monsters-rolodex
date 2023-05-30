@@ -10,6 +10,7 @@ import { HomeComponent } from './components/home component/home/home.component';
 import { MonsterComponent } from './components/monster component/monster/monster.component';
 import { MonstersComponent } from './components/monsters component/monsters/monsters.component';
 import { HeaderComponent } from './components/header component/header/header.component';
+import { HeaderDirective } from './directives/header.directive';
 
 const routes: Routes = [
   // { path: '', component: HomeComponent },
@@ -29,6 +30,7 @@ const routes: Routes = [
     MonsterComponent,
     MonstersComponent,
     HeaderComponent,
+    HeaderDirective,
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes), HttpClientModule],
   providers: [],

@@ -13,7 +13,7 @@ ul {
 }
 
 li {
-  color: #0ccac4;
+  /* color: #0ccac4; */
   font-size: 25px;
   font-family: "Bigelow Rules", cursive;
   cursor: pointer;
