@@ -21,6 +21,6 @@ li {
 }
 
 li:hover {
-  color: #68e7e3;
+  /* color: #68e7e3; */
   transform: scale(1.15);
 }
