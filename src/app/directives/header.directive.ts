@@ -1,9 +1,11 @@
-import { Directive, ElementRef, HostListener } from '@angular/core';
+import { Directive, ElementRef, HostListener, Input } from '@angular/core';
 
 @Directive({
   selector: '[appHeader]',
 })
 export class HeaderDirective {
+  @Input('appHeader') color: any;
+
   constructor(private eleRef: ElementRef) {
     // console.log(eleRef.nativeElement);
     eleRef.nativeElement.style.color = '#0ccac4';
@@ -16,6 +18,6 @@ export class HeaderDirective {
 
   @HostListener('mouseleave')
   onMouseLeave() {
-    this.eleRef.nativeElement.style.color = '#0ccac4';
+    this.eleRef.nativeElement.style.color = this.color;
   }
 }
